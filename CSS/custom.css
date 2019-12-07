@@ -1,0 +1,224 @@
+/*  här lägger vi de färger som ska användas */
+:root{
+  --primaryColor:#f5f5f5;
+  --primaryColorDarker:rgb(137, 48, 172);
+  --black:#000;
+  --black-faded:#1b1b1b;
+  --darkGrey: #333;
+  --mediumGrey: #444;
+  --lightGray: #cfcfcf;
+  --white: #fff;
+  --boneWhite:rgb(250, 249, 248);
+  --logoBgColor:#d31919;
+  --boxShadowPrimaryD: rgba(39, 39, 39, 0.7);
+  --boxShadowGrey: rgba(68, 68,68, .5);
+}
+
+body{
+  background-color:var(--mediumGrey) ;
+}
+
+ .background{
+/* background: url('/Images/blur-close-up-code-computer-546819.jpg')  center center/cover ; */
+background: url('/Images/abstract-business-code-coder-270348.jpg')  center center/cover ;
+height: 100%;
+height: 100vh;
+
+} 
+
+/*   ::after   */
+/* .background::after {
+  content: '';
+  height: 100vh;
+  width:100%;
+  display:block;
+  background-image: url('/Images/abstract-business-code-coder-270348.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  filter: blur(5px);
+  /* transition: all 1s; */
+/* } */ 
+
+
+.display-block{
+  display: inline-block;
+}
+
+/*     Navbar     */
+#navbar {
+  background: #333;
+  color: #fff;
+  overflow: auto;
+}
+
+#navbar a {
+color: #fff;
+}
+
+
+#navbar .logo {
+  float: left;
+  padding-top: 20px;
+}
+
+#navbar h1 {
+  float: left;
+  padding-top: 20px;
+}
+
+#navbar ul {
+  list-style: none;
+  float: right;
+}
+
+#navbar ul li {
+  float: left;
+}
+
+#navbar ul li a {
+  display: block;
+  padding: 20px;
+  text-align: center;
+}
+#navbar ul li a:hover,
+ #navbar ul li a.current{
+  background: #444;
+  color: #f7c08a;
+}
+
+#userContent{
+  margin-top: 3rem;
+  padding: 4rem;
+  border-radius: 1rem;
+}
+
+#userContent a{
+
+  color: var(--primaryColor);
+  /* background: #444; */
+  text-decoration: none;
+  cursor: pointer;
+
+  font-size: 2rem;
+}
+
+.userContent-background{
+  background-color: var(--boxShadowPrimaryD);
+  padding: 4rem;
+  border-radius: 1rem;
+}
+
+.main-heading-text{
+  color: var(--primaryColor);
+}
+
+
+
+.regheading{
+  position: absolute;
+    z-index: 1;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    color: var(--primaryColor);
+}
+
+.form-content{
+  position: absolute;
+    z-index: 1;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -75%);
+    /* text-align: center; */
+}
+
+.regform-content{
+  position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* text-align: center; */
+}
+
+.center{
+  /* border: 1px dotted #333; */
+  display: flex;
+  /* display: block; */
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  /* margin: 6rem auto; */
+  /* margin-top:5rem; */
+}
+
+.form-bg{
+  position: relative;
+  background-color: var(--primaryColor);
+  border-radius: 0.4rem;
+  padding: 1rem;
+  margin: 3rem 0;
+
+  min-width: 300px;
+  
+}
+
+
+/* gömmer regButton innan man klickat i användarvilkor */
+#regButton{
+  display: none;
+}
+
+
+#showRegOk{
+
+  display: none;
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  min-width: 300px;
+  height: 300px;
+
+  background-color: #b3dfb1;
+  border-radius: 1rem;
+
+  color: #444;
+text-align: center;
+padding: 2rem;
+
+
+}
+
+#showLoginOk{
+  /* display: flex; */
+  display: none;
+  z-index: 2;
+  position: absolute;
+  top: 40%;
+    left: 20%;
+    transform: translate(-20%, -40%);
+  min-width: 300px;
+  height: 300px;
+
+  background-color: #b3dfb1;
+  border-radius: 1rem;
+
+  color: #444;
+text-align: center;
+padding: 2rem;
+
+
+}
+
+
+
+/*      Main Footer     */
+#main-footer {
+  text-align: center;
+  background: #444;
+  color: #fff;
+  padding: 20px;
+}

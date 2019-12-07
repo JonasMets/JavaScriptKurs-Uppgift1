@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="sv-SE">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Registrera</title>
+
+  <script src="https://kit.fontawesome.com/8df4bff9ed.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+  <!-- min stylesheet -->
+  <link rel="stylesheet" href="/CSS/custom.css">
+</head>
+
+<body class="">
+  <!-- background -->
+  <div class="background">
+
+
+    <header>
+      <nav id="navbar">
+
+        <div class="container">
+          <h1 class="logo"><a href="index.html">SoftWare Inc</a></h1>
+
+        </div>
+      </nav>
+    </header>
+
+    <!-- registrerings formulär -->
+    <!-- regform-content -->
+    <div class="container">
+
+      <!-- regform-content -->
+      <div class="">
+
+        <div class="form-bg">
+
+          <div id="showRegOk" class="center"></div>
+
+          <form id="regForm">
+
+            <h2>Registrera nytt konto</h2>
+
+            <!-- firstname/lastname -->
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="firstName">Förnamn</label>
+                <input type="text" name="" id="firstName" placeholder="max 20 tecken" class="form-control" autocomplete="off">
+                <small id="firstNameHelp" class="form-text text-muted"></small>
+              </div>
+
+              <div class="form-group col-md-6">
+                <label for="lastName">Efternamn</label>
+                <input type="text" name="" id="lastName" placeholder="max 20 tecken" class="form-control" autocomplete="off">
+                <small id="lastNameHelp" class="form-text text-muted"></small>
+              </div>
+
+            </div>
+
+            <!-- email / confirm email -->
+            <div class="form-row">
+
+              <div class="form-group col-md-6">
+                <label for="email">Email</label>
+                <!-- class=" form-row" -->
+                <input type="email" name="email" id="email" class="form-control" placeholder="email@example.com"
+                  autocomplete="off">
+
+                <small id="emailHelp" class="form-text text-muted"></small>
+              </div>
+
+              <div class="form-group col-md-6">
+                <label for="confirmemail">Bekräfta Email</label>
+                <!-- class=" form-row" -->
+                <input type="email" name="email" id="confirmemail" class="form-control" placeholder="email@example.com"
+                  autocomplete="off">
+
+                <small id="confirmemailHelp" class="form-text text-muted"></small>
+              </div>
+            </div>
+
+
+
+            <!-- password -->
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="password">Lösenord</label>
+                <input type="password" name="" id="password" placeholder="minst 8 tecken max 20 tecken" class="form-control"
+                  autocomplete="off">
+                <small id="passwordHelp" class="form-text text-muted"></small>
+              </div>
+
+              <div class="form-group col-md-6">
+                <label for="confirmpassword">Bekräfta Lösenord</label>
+                <input type="password" name="" id="confirmpassword" class="form-control" autocomplete="off">
+                <small id="confirmpasswordHelp" class="form-text text-muted"></small>
+              </div>
+            </div>
+
+
+
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="role">Användare</label>
+                <select name="" id="role" class="form-control">
+                  <option value="Privat" selected>Privat</option>
+                  <option value="Företag">Företag</option>
+                  <option value="Skola">Skola</option>
+                </select>
+              </div>
+            </div>
+
+
+
+            <!-- radio buttons -->
+            <!-- checked -->
+            <div class="mb-3">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="radio1" id="radio1" value="false" checked>
+                <label class="form-check-label" for="radio1">
+                  Skicka inga informations eller nyhetsbrev
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="radio1" id="radio2" value="true">
+                <label class="form-check-label" for="radio2">
+                  Skicka information och nyhetsbrev
+                </label>
+              </div>
+            </div>
+
+
+
+
+            <!-- text box -->
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <input class="form-control" type="text" name="" id="textbox1" placeholder="Övrig info 'frivilligt' max 120 tecken"
+                  autocomplete="off">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <div class="form-check">
+                  <input type="checkbox" name="" id="toc" class="form-check-input">
+                  <label for="toc" class="form-check-label">Jag acepterar <span><a href="#">användarvilkoren</a> </span>
+                  </label>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- regbutton är gömd med css tills man klickar i checkox -->
+            <div class="form-row">
+              <div class="form-group col-md-6 ">
+                <button id="regButton" type="submit" class="btn btn-info">Registrera</button>
+              </div>
+            </div>
+
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer id="main-footer">
+    <p>Software Inc &copy; 2019 , All Rights Reserved</p>
+  </footer>
+  <!-- Footer end -->
+
+  <!-- bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <!-- min script fil -->
+  <script src="/Scripts/script.js"></script>
+
+
+  <!-- </div> -->
+
+</body>
+
+</html>
